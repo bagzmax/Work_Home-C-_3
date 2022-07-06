@@ -9,15 +9,16 @@
 //     }    
 //     return true;
 // }
-// System.Console.WriteLine(IsPalindrome);
+// Console.WriteLine(IsPalindrome);
 
-int[] numbers = { 1, 2, 3, 4, 5 };
-foreach (int i in numbers)
-{
-    Console.Write(i + " ");
-}
+//int[] numbers = { 1, 2, 3, 4, 5 };
+// foreach (int i in numbers)
+// {
+//     Console.Write(i + " ");
+// }
 
-string text = Console.ReadLine();
+Console.Write ("Введите число: ");
+string text = Console.ReadLine()!;
 int len = text.Length;
 bool flag = true;
 
@@ -31,9 +32,9 @@ for (int i = 0; i < len/2; i++)
 }
 if (flag)
 {
-    Console.WriteLine("{0} is palindrome", text);
+    Console.WriteLine("{0} это палиндром", text);
 }
 else
 {
-    Console.WriteLine("{0} is not palindrome", text);
+    Console.WriteLine("{0} это не палиндром", text);
 }
